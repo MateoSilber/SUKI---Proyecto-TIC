@@ -1,4 +1,6 @@
-LINK DE DIAGRAMA DE PUNTOS: "https://miro.com/app/board/uXjVIrEC4SI=/?share_link_id=774515287886" (Copiar y pegar en Google)
+LINK DE DIAGRAMA FLUJO: "https://miro.com/app/board/uXjVIrEC4SI=/?share_link_id=774515287886" (Copiar y pegar en Google)
+
+LINK DE FIGMA: "https://www.figma.com/design/gV1PdvLwc9a6YIXv4cDM1r/SUKI?node-id=0-1&t=UnNbWqJxdPpgvzhq-1" (Copiar y pegar en Google)
 
 SUKI es una app en la que puedes plantearte objetivos diarios/semanales/mensuales por:
 
