@@ -1,24 +1,26 @@
-const emailInput = document.getElementById('email');
-const loginButton = document.getElementById('login-btn');
-const emailError = document.getElementById('email-error');
 
-loginButton.addEventListener('click', function() {
-    // Limpia errores anteriores
-    emailError.textContent = '';
-    emailInput.style.borderColor = ''; // Restablece el borde
 
-    if (!isValidEmail(emailInput.value)) { // Una función de validación personalizada
-        emailError.textContent = 'Por favor, introduce un correo electrónico válido.';
-        emailInput.style.borderColor = 'red'; // Resalta el campo
+const emailValido = "test@mail.com";
+const contraseñaValida = "1234";
+
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    let email = document.getElementById("email").value.trim();
+    let contraseña = document.getElementById("contraseña").value.trim();
+    let mensaje = document.getElementById("mensaje");
+
+    
+    if (email === "" || contraseña === "") {
+        mensaje.textContent = "⚠️ Por favor, completa todos los campos.";
+        mensaje.style.color = "red";
+        return;
+    }
+
+
+    if (email === emailValido && contraseña === contraseñaValida) {
+        window.location.href = "../menu principal";
     } else {
-        // La información es válida, procede con el inicio de sesión
-        console.log('Información válida, iniciando sesión...');
-        // Aquí puedes hacer el envío del formulario o realizar la acción
+        mensaje.textContent = "❌ Usuario o contraseña incorrectos.";
+        mensaje.style.color = "red";
     }
 });
-
-// Función de validación de ejemplo
-function isValidEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-}
