@@ -18,7 +18,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
 
     if (email === emailValido && contraseña === contraseñaValida) {
-        window.location.href = "../menu principal";
+        window.location.href = "../menu principal/indexMenuPrincipal.html";
     } else {
         mensaje.textContent = "❌ Usuario o contraseña incorrectos.";
         mensaje.style.color = "red";
